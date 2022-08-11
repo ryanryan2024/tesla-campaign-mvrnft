@@ -12,9 +12,11 @@ const Navbar = () => {
 
     return (
         <div className="flex justify-between p-10">
-            <div>
-                <Image src={Logo} alt="logo" width={125} height={35} />
-            </div>
+            <Link href="https://mvrnft.netlify.app/">
+                <div>
+                    <Image className="cursor-pointer" src={Logo} alt="logo" width={125} height={35} />
+                </div>
+            </Link>
             <div>
                 <div className="pb-1 flex justify-center">
                     <Menu as="div" className="relative inline-block text-left">
