@@ -7,6 +7,8 @@ import { Menu } from "@headlessui/react";
 const Navbar = () => {
     const connectWallet = useMetamask()
     const address = useAddress()
+    const connectCoinbase = useCoinbaseWallet()
+    const connectWalletConnect = useWalletConnect()
 
     return (
         <div className="flex justify-between p-10">
