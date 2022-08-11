@@ -3,7 +3,6 @@ import Link from "next/link";
 import Logo from '../public/logo.jpeg'
 import {useMetamask, useAddress, useCoinbaseWallet, useMagic, useWalletConnect} from "@thirdweb-dev/react";
 import { Menu } from "@headlessui/react";
-import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const Navbar = () => {
     const connectWallet = useMetamask()
@@ -17,7 +16,7 @@ const Navbar = () => {
             <div>
                 <div className="pb-1 flex justify-center">
                     <Menu as="div" className="relative inline-block text-left">
-                        <Menu.Button className="inline-flex bg-none p-2 rounded-3xl border-black border-2"><ChevronDownIcon className="w-6 h-6"/> Connect Wallet</Menu.Button>
+                        <Menu.Button className="inline-flex bg-none p-2 rounded-3xl border-black border-2">↓ Connect Wallet</Menu.Button>
                         <Menu.Items className="py-2">
                             <Menu.Item className="bg-slate-200 w-full text-left p-2 rounded-3xl">
                                 {({active}) => (
